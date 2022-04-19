@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="shortcut icon" href="unila.ico"/>
+    <title>Tugas 1 Praktikum WEB</title>
+    <style>
+        ul.nav {
+            margin:0;
+            padding:0;
+            list-style:none;
+            height:36px; line-height:36px;
+            background:#0d7963; /* you can change the backgorund color here. */
+            font-family:Arial, Helvetica, sans-serif;
+            font-size:13px;
+        }
+        ul.nav li {
+            border-right:1px solid #189b80; /* you can change the border color matching to your background color */
+            float:left;
+        }
+        ul.nav a {
+            display:block;
+            padding:0 28px;
+            color:#ccece6;
+            text-decoration:none;
+        }
+        ul.nav a:hover,
+        ul.nav li.current a {
+            background:#086754;
+        }
+    </style>
+    <script>
+        function search(query){
+            if(query.slice(0, 7) == "http://"){
+                window.location.href = query
+            }
+            else{
+                window.location.href = "https://www.google.com/search?q=" + query
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <ul class="nav">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="Tugas1.html">About Me</a></li>
+        <li><a href="utp.html">Schedule</a></li>
+        <li><input type="text" placeholder="Search Google or type URL" id="Search"></li>
+        <li><button onclick="search(document.getElementById('Search').value)">Search</button></li>
+    </ul>
+    <h1 align="center">My Biografi</h1>
+    <table border="1" align="center" cellspacing="3" cellpadding="4">
+        <thead>
+            <th colspan="4">Praktikum 2</th>
+        </thead>
+        <thead>
+            <th >Foto</th>
+            <th colspan="2">Data Diri</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="7"><img src="AhmadKun.jpg" width="250px"></th>
+            </tr>
+            <tr>
+                <td><I>NPM</I></td>
+                <td>2017051060</td>
+            </tr>
+            <tr>
+                <td><I>Nama</I></td>
+                <td>Ahmad Al Farizi</td>
+            </tr>
+            <tr>
+                <td><I>Kelas</I></td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td><I>Hobi</I></td>
+                <td>
+                    <ul>
+                    <li>Coding</li>
+                    <li>Membaca</li>
+                    <li>Berolahraga</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <td><I>Sosmed</I></td>
+                <td><a href="https://www.instagram.com/al._.rizie/"> <img src="https://www.vectorlogo.zone/logos/instagram/instagram-ar21.png" width="120px" height="60"></a>
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td><I>My Schedule</I></td>
+                <td align="center">
+                    <div id="container">
+                        <button style="margin-top: 20px;" class="learn-more" onclick="window.location.href='uts.html'">
+                          <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                          </span>
+                          <span class="button-text">Learn More</span>
+                        </button>
+                      </div>
+                    <br>
+                </td>
+            </tr>
+        </tbody>  
+    </table>
+</body>
+<html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="unila.ico"/>
+    <link rel="stylesheet" href="CSS/box.css">
+    <title>My Schedule</title>
+    <style>
+        table, tr, th, td {
+            border: 1px solid;
+            border-radius: 5px;
+            text-align: center;
+        }
+        h2{
+            text-decoration-style: wavy;
+        }
+        div-1{
+            background-color: #00AB08;
+            width: 2px;
+            height: 2px;
+        }
+        ul.nav {
+            margin:0;
+            padding:0;
+            list-style:none;
+            height:36px; line-height:36px;
+            background:#0d7963; /* you can change the backgorund color here. */
+            font-family:Arial, Helvetica, sans-serif;
+            font-size:13px;
+        }
+        ul.nav li {
+            border-right:1px solid #189b80; /* you can change the border color matching to your background color */
+            float:left;
+        }
+        ul.nav a {
+            display:block;
+            padding:0 28px;
+            color:#ccece6;
+            text-decoration:none;
+        }
+        ul.nav a:hover,
+        ul.nav li.current a {
+            background:#086754;
+        }
+    </style>
+    <script>
+        function search(query){
+            if(query.slice(0, 7) == "http://"){
+                window.location.href = query
+            }
+            else{
+                window.location.href = "https://www.google.com/search?q=" + query
+            }
+        }
+    </script>
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="Tugas1.html">About Me</a></li>
+        <li><a href="utp.html">Schedule</a></li>
+        <li><input type="text" placeholder="Search Google or type URL" id="Search"></li>
+        <li><button onclick="search(document.getElementById('Search').value)">Search</button></li>
+    </ul>
+    <br>
+    <table style="margin-left: 20px;" border="5" cellspacing="0" align="left">
+        <tr>
+            <td colspan="8">
+                <h1 align="center">Normal Time</h1>
+            </td>
+        </tr>
+        <tr>
+            <td height="50" width="100">
+                <b>Jam/Hari</b></br>
+            </td>
+            <td height="50" width="100">
+                <b>Senin</b>
+            </td>
+            <td height="50" width="100">
+                <b>Selasa</b>
+            </td>
+            <td height="50" width="100">
+                <b>Rabu</b>
+            </td>
+            <td height="50" width="100">
+                <b>Kamis</b>
+            </td>
+            <td height="50" width="100">
+                <b>Jumat</b>
+            </td>
+            <td height="50" width="100">
+                <b>Sabtu</b>
+            </td>
+            <td height="50" width="100">
+                <b>Minggu</b>
+            </td>
+        </tr>
+        <tr>
+            <td height="50">
+                <b>I<br>7.30 - 9.10</b></td>
+            <td style="background-color: #B7FFBF;" height="50">Teori<br>Informasi</td>
+            <td style="background-color: #B7FFBF;" height="50">Pemrograman Web</td>
+            <td height="50"> </td>
+            <td style="background-color: #B7FFBF;" height="50">Analisis Desain dan SI</td>
+            <td height="50"> </td>
+            <td rowspan="6" colspan="2" height="50">
+                <h2>T<br>U<br>R<br>U</h2>
+        </tr>
+        <tr>
+            <td height="50">
+                <b>II<br>9.20 - 11.00</b></td>
+            </td>
+            <td style="background-color: #B7FFBF;" height="50">Pembelajaran Mesin</td>
+            <td style="background-color: #00AB08; border-width: thin; color: white; border-color: black;" height="50">Analisis Desain dan SI</td>
+            <td style="background-color: #00AB08; border-width: thin; color: white; border-color: black;" height="50">Kecerdasan Buatan</td>
+            <td style="background-color: #00AB08; border-width: thin; color: white; border-color: black;" height="50">Pemrograman Web</td>
+            <td style="background-color: #00AB08; border-width: thin; color: white; border-color: black;" height="50">Internet of Things</td>
+        </tr>
+        <tr>
+            <td height="50">
+                <b>III<br>11.10 - 12.50</b></td>
+            </td>
+            <td height="50"> </td>
+            <td height="50"> </td>
+            <td style="background-color: #00AB08; border-width: thin; color: white; border-color: black;" height="50">Pembelajaran Mesin</td>
+            <td style="background-color: #B7FFBF;" height="50">Teknologi dan Aplikasi Mobile</td>
+            <td height="50"> </td>
+        </tr>
+        <tr>
+            <td height="50">
+                <b>IV<br>13.30 - 15.10</b></td>
+            </td>
+            <td style="background-color: #B7FFBF;" height="50">Kecerdasan Buatan</td>
+            <td style="background-color: #00AB08; border-width: thin; color: white; border-color: black;" height="50">Teknologi dan Aplikasi Mobile</td>
+            <td style="background-color: #B7FFBF;" height="50">Pemrosesan Data Terdistribusi</td>
+            <td height="50"> </td>
+            <td style="background-color: #00AB08; border-width: thin; color: white; border-color: black;" height="50">Pemrosesan Data Terdistribusi</td>
+        </tr>
+        <tr>
+            <td height="50">
+                <b>V<br>15.30 - 17.00</b></td>
+            </td>
+            <td height="50"> </td>
+            <td style="background-color: #B7FFBF;" height="50">Internet of Things</td>
+            <td height="50"> </td>
+            <td height="50"> </td>
+            <td height="50"> </td>
+        </tr>
+    </table>
+    <br>
+    <h7 style="color: white;" align="center">.........................................................................................................................................</h7><br>
+    <div class="div-1">Praktikum</div>
+    <div class="div-2">Teori</div><br>
+    <table style="margin-left: 20px;" border="5" cellspacing="0" align="left">
+        <tr>
+            <td colspan="8">
+                <h1 align="center">Ramadhan Time</h1>
+            </td>
+        </tr>
+        <tr>
+            <td height="50" width="100">
+                <b>Jam/Hari</b></br>
+            </td>
+            <td height="50" width="100">
+                <b>Senin s/d Kamis</b>
+            </td>
+            <td height="50" width="100">
+                <b>Jumat</b>
+            </td>
+            <td height="50" width="100">
+                <b>Sabtu</b>
+            </td>
+            <td height="50" width="100">
+                <b>Minggu</b>
+            </td>
+        </tr>
+        <tr>
+            <tr>
+                <td height="50">
+                    <b>I</b></td>
+                <td colspan="2" height="50">7.30 - 8.40</td>
+                <td rowspan="6" colspan="2" height="50">
+                    <h2>I<br>B<br>A<br>D<br>A<br>H</h2>
+            </tr>
+            <tr>
+                <td height="50">
+                    <b>II</b></td>
+                <td colspan="2" height="50">8.50 - 10.00</td>
+            </tr>
+            <tr>
+                <td height="50">
+                    <b>III</b></td>
+                <td colspan="2" height="50">10.10 - 11.20</td>
+            </tr>
+            <tr>
+                <td height="50">
+                    <b>IV</b></td>
+                <td height="50">12.30 - 13.40</td>
+                <td height="50">13.30 - 14.40</td>
+            </tr>
+            <tr>
+                <td height="50">
+                    <b>V</b></td>
+                <td height="50">13.50 - 15.00</td>
+                <td height="50">-</td>
+            </tr>
+        </tr>
+    </table>
+    <br>
+</body>
+</html>

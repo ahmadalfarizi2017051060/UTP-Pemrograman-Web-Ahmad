@@ -1,0 +1,20 @@
+.div-1{
+    width:85px;
+    height:24px;
+    margin-left: 150px;
+    background-color: #00AB08;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+}
+
+.div-2{
+    width:85px;
+    height:24px;
+    margin-left: 150px;
+    text-align: center;
+    background-color: #B7FFBF;
+    border-radius: 5px;
+    color: black;
+    font-size: 20px;
+}
